@@ -19,12 +19,14 @@ import Layout from "@/layouts/Layout.astro";
 ---
 
 <style>
-	.shit {
-		position: sticky;
-		top: 1rem;
+	@media  (min-height: 690px) {
+	.stuck-scroll {
+			position: sticky;
+			top: 1rem;
+		}
 	}
-	@media only screen and (max-width: 750px) {
-		.shit {
+	@media only screen and (max-width: 1200px) {
+		.stuck-scroll {
 			position: static;
 		}
 	}
@@ -35,7 +37,7 @@ import Layout from "@/layouts/Layout.astro";
 	description={"Toki Pona: the language with 130 words."}
 	draft
 >
-	<section class="shit" style="grid-area: right;
+	<section class="stuck-scroll" style="grid-area: right;
 ">
 		<div style="max-width: 40em;margin: 0 auto;">
 			<h1>Reviews</h1>
