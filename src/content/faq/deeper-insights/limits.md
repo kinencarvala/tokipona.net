@@ -1,10 +1,10 @@
 ---
 title: What are Toki Pona's limits?
 faq_group: 3
-# faq_index:
+faq_index: 1
 published: true
 # image:
-# simple:
+simple: "In theory, it can do everything. But it takes more effort and time to say stuff and understand stuff sometimes, so it can feel clunky." 
 ---
 
 There are no hard limits for what Toki Pona is able to communicate. It is a
