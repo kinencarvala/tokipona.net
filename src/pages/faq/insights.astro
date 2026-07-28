@@ -1,9 +1,12 @@
 ---
 import FAQChild from "@/layouts/FAQChild.astro";
 import { getCollection, getEntry, render } from "astro:content";
-const kasi = await getCollection("faqEntries", ({ data }) => {
-	return data.published == true && data.faq_group == 3;
-});
+const kasi = (
+	await getCollection("faqEntries", ({ data }) => {
+		return data.published == true && data.faq_group == 3;
+	})
+).sort((a, b) => a.data.faq_index.valueOf() - b.data.faq_index.valueOf());
+
 ---
 
 <style>

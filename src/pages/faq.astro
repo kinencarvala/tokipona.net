@@ -12,9 +12,11 @@ const waso = (
 	})
 ).sort((a, b) => a.data.faq_index.valueOf() - b.data.faq_index.valueOf());
 
-const soweli = await getCollection("faqEntries", ({ data }) => {
-	return data.published == true && data.faq_group == 3;
-});
+const soweli = (
+	await getCollection("faqEntries", ({ data }) => {
+		return data.published == true && data.faq_group == 3;
+	})
+).sort((a, b) => a.data.faq_index.valueOf() - b.data.faq_index.valueOf());
 
 import Layout from "@/layouts/Layout.astro";
 ---
