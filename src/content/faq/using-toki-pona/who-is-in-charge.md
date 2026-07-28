@@ -3,7 +3,7 @@ title: Who is in charge of Toki Pona?
 faq_group: 2
 faq_index: 6
 published: true
-# image:
+image: whos-in-charge.png
 # simple:
 ---
 

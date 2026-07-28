@@ -3,7 +3,7 @@ title: What are Toki Pona's limits?
 faq_group: 3
 faq_index: 1
 published: true
-# image:
+image: limits.png
 simple: "In theory, it can do everything. But it takes more effort and time to say stuff and understand stuff sometimes, so it can feel clunky." 
 ---
 

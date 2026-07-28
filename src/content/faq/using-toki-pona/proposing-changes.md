@@ -3,7 +3,7 @@ title: Can I propose changes to Toki Pona?
 faq_group: 2
 faq_index: 5
 published: true
-# image:
+image: proposing-changes.png
 # simple:
 ---
 

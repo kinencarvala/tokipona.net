@@ -3,7 +3,7 @@ title: How is Toki Pona related to Esperanto?
 faq_group: 3
 faq_index: 3
 published: true
-# image:
+image: esperanto.png
 simple: Esperanto was one of Toki Pona's inspirations. They have a similar vibe and there's some cultural and member overlap. 
 ---
 

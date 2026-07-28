@@ -3,7 +3,7 @@ title: How many words are there in Toki Pona?
 faq_group: 1
 faq_index: 3
 published: true
-image: how-many-words.png
+image: test.png
 # simple:
 ---
 
