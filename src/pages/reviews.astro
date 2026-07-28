@@ -30,20 +30,32 @@ import Layout from "@/layouts/Layout.astro";
 			position: static;
 		}
 	}
+	@media only screen and (min-width: 1201px) {
+		.stuck-scroll{ /* Prevent side container's details from causing overflow where you can't view it*/
+			max-height: 100vh;
+			overflow: auto;
+			
+
+		}
+
+
+	}
+
 </style>
 
 <Layout
-	title={"Reviews | Toki Pona (Homepage)"}
+	title={"Perspectives | Toki Pona (Homepage)"}
 	description={"Toki Pona: the language with 130 words."}
 	draft
 >
 	<section class="stuck-scroll" style="grid-area: right;
 ">
 		<div style="max-width: 40em;margin: 0 auto;">
-			<h1>Reviews</h1>
+			<h1>Perspectives</h1>
+			<p style="text-align: center"><em>Personal Experiences and Stories</em></p>
 			<p>
 				Why learn Toki Pona? This question has more answers than speakers, so we
-				collected these testimonials from community members to get the most
+				collected these from community members to get the most
 				complete answer possible.
 			</p>
 			<p>
