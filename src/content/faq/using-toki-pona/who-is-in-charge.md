@@ -25,9 +25,9 @@ nascent community to take the formation of the language into its own hands. "Now
 the rest depends on you. Go enjoy yourself. Create, play, and be pona!" When a
 speaking community did emerge, it joyfully embraced this philosophy.
 
-Although the creator may post material under the monicker "Official," both she
+Although the creator may post material under the moniker "Official," both she
 and community members understand "Official" to function uniquely like a personal
-signature for herself. Use of this monicker does not mean that her Toki Pona is
+signature for herself. Use of this moniker does not mean that her Toki Pona is
 any more official, real, true, correct, or than that of any other. She has
 stated before that interpreting the word as having something to do with a
 "prescribed way to speak Toki Pona" would "contradict the whole point" of the
