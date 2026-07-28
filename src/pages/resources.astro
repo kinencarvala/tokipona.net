@@ -1,0 +1,23 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import Toki from "@/content/o-pali.astro";
+---
+
+<Layout title={"o pali"} description={"."} draft>
+	<style>
+		.badge {
+			display: flex;
+			justify-content: center;
+		}
+		iframe.form {
+			width: 100%;
+			min-height: 45em;
+		}
+	</style>
+	<section style="grid-area: left;" class="prose">
+		<h1>Resources</h1>
+	</section>
+	<section style="grid-area: right;" class="prose">
+		<p>Sidebar Content Here</p>
+	</section>
+</Layout>
