@@ -4,7 +4,7 @@ faq_group: 2
 faq_index: 1
 published: true
 image: is-it-useful.png
-# simple:
+simple: It's not economically useful. For most speakers, it's a fun hobby and useful emotionally. Some use it as a personal or secret language.
 ---
 
 Toki Pona is what you make of it. If you'd like to experience and participate in

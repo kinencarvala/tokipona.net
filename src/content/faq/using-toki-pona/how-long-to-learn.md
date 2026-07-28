@@ -4,8 +4,7 @@ faq_group: 2
 faq_index: 2
 published: true
 image: how-long-learn.png
-
-# simple:
+simple: Depends on the person. It's possible to learn the basics and have simple conversations if you work on it everyday for a month. But its a language, and languages are hard.  
 ---
 
 Like all languages, the amount of time needed to learn Toki Pona depends a lot

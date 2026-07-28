@@ -4,7 +4,7 @@ faq_group: 2
 faq_index: 3
 published: true
 image: where-are-speakers.png
-# simple:
+simple: It is nationless and mostly spoken online.
 ---
 
 Toki Pona was first published and spoken online, so it is not tied to any one
