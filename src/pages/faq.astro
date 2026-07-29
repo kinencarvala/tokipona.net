@@ -19,6 +19,7 @@ const soweli = (
 ).sort((a, b) => a.data.faq_index.valueOf() - b.data.faq_index.valueOf());
 
 import Layout from "@/layouts/Layout.astro";
+import { compiledContent as toki } from "@/content/rapid-fire.md";
 ---
 
 <style>
@@ -123,12 +124,28 @@ import Layout from "@/layouts/Layout.astro";
 			color: rgb(29, 61, 61);
 		}
 	}
+	.quick{
+		padding: 2em;
+		column-width: 15em;
+		gap: 2em;
+		.quick-child{
+			break-inside: avoid;
 
+			h3{
+				padding-top: 0em;
+				margin-top: 0em;
+			}
+			p{
+				margin-bottom: 2em;
+			}
+		}
+
+	}
 </style>
 
 <Layout
 	title={"Frequently Asked Questions | Toki Pona"}
-	description={"This is a test page."}
+	description={"Answers to common questions people have when they hear about Toki Pona: the language of 130 words."}
 	draft
 >
 	<section style="grid-area: right;" class="right-toc">
@@ -236,5 +253,16 @@ import Layout from "@/layouts/Layout.astro";
 				))
 			}
 		</ul>
+
+		<h2>Quick Questions</h2>
+
+		<div class="quick">
+			{
+				(async () => {
+					let fuck = (await toki()).split("<h3").slice(1);
+					return fuck.map((a) => <div class="quick-child" set:html={"<h3" + a}> </div>);
+				})()
+			}
+		</div>
 	</section>
 </Layout>
