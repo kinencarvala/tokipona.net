@@ -42,3 +42,13 @@ bun dev  # run the dev server
 <!--Content (`/content/`) is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.en).-->
 
 <!--Code (`/src/`) is licensed under [GPL-3.0](https://www.gnu.org/licenses/gpl-3.0.en.html).-->
+
+## Drafted content
+
+You can mark things as drafts and it will not release them to the production deployment. If you want to preview the production deployment, run: 
+
+```
+bun dev --mode production
+```
+
+You can preview drafted content by visiting this url[https://tokipona-net-piniala.tokipona.workers.dev/](https://tokipona-net-piniala.tokipona.workers.dev/) 
