@@ -20,5 +20,5 @@ In Toki Pona, _toki_ means 'language, communication, speech,' while _pona_ means
 
 When speaking Toki Pona, depending on the context, a speaker can use _toki pona_
 to refer to the language itself, or to good communication more generally. After
-your friend gives a speech, you encourage them by saying, "_sina toki pona!_",
+to congratulate a friend after they've delivered a speech, speakers might say, "_sina toki pona!_",
 or "You spoke well!"

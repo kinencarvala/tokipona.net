@@ -7,7 +7,7 @@ image: limits.png
 simple: "In theory, it can do everything. But it takes more effort and time to say stuff and understand stuff sometimes, so it can feel clunky." 
 ---
 
-There are no hard limits for what Toki Pona is able to communicate. It is a
+There are no hard limits on what can be communicated using Toki Pona. It is a
 complete and usable language, and its limits are fluid, being regularly explored
 and pushed as Toki Pona speakers continue to speak it. In short, Toki Pona is
 only limited by the experiences and interests of its speakers, not by its
