@@ -13,8 +13,11 @@ if (process.env.CF_PAGES) {
 	}
 } else if (process.env.WORKERS_CI) {
 	siteUrl = `https://${process.env.WORKERS_CI_BRANCH}-${process.env.WORKERS_CI_DOMAIN}`;
-	if (process.env.WORKERS_CI_BRANCH === "main" && process.env.WORKERS_CI_DOMAIN?.startsWith("tokipona-net.")) {
-		siteUrl = "https://tokipona.net";
+	if (process.env.WORKERS_CI_BRANCH === "main") {
+		siteUrl = `https://${process.env.WORKERS_CI_DOMAIN}`;
+		if (process.env.WORKERS_CI_DOMAIN?.startsWith("tokipona-net.")) {
+			siteUrl = "https://tokipona.net";
+		}
 	}
 }
 
