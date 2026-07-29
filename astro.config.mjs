@@ -4,13 +4,25 @@ import cloudflare from "@astrojs/cloudflare";
 import mdx from "@astrojs/mdx";
 import sitemap from "@astrojs/sitemap";
 
+let siteUrl = "http://localhost";
+
+if (process.env.CF_PAGES) {
+	siteUrl = `https://${process.env.CF_PAGES_BRANCH}.tokipona-net-7fb.pages.dev`;
+	if (process.env.CF_PAGES_BRANCH === "main") {
+		siteUrl = "https://tokipona.net";
+	}
+} else if (process.env.WORKERS_CI) {
+	siteUrl = `https://${process.env.WORKERS_CI_BRANCH}-${process.env.WORKERS_CI_DOMAIN}`;
+	if (process.env.WORKERS_CI_BRANCH === "main" && process.env.WORKERS_CI_DOMAIN?.startsWith("tokipona-net.")) {
+		siteUrl = "https://tokipona.net";
+	}
+}
+
+console.log(siteUrl);
+
 // https://astro.build/config
 export default defineConfig({
-	site:
-		process.env.CF_PAGES_BRANCH === "main" ? "https://tokipona.net"
-		: process.env.CF_PAGES_BRANCH ?
-			`https://${process.env.CF_PAGES_BRANCH}.tokipona-net-7fb.pages.dev`
-		:	"http://localhost/",
+	site: siteUrl,
 
 	// tenpo ni la ilo cloudflare pages li pana e lipu. nasin ona la, sitelen
 	// palisa pini o lon a nimi ilo lipu - sina lukin lukin e lipu kepeken ni ala
@@ -41,6 +53,6 @@ export default defineConfig({
 	}),
 
 	vite: {
-		envPrefix: ["PUBLIC_,", "CF_"],
+		envPrefix: ["PUBLIC_,", "CF_", "WORKERS_"],
 	},
 });
