@@ -38,7 +38,7 @@ to speak. It is "useful" because it can make us more considerate of what our
 words mean, to ourselves and to others. It is "useful" because it helps us to
 meet close friends, and even partners. Toki Pona's usefulness cannot be measured
 economically, but it can be felt emotionally. You can also
-[jump to "What is Toki Pona for"](#what-is-toki-pona-for) to see Toki Pona
+[jump to "Perspectives"](/perspectives/) to see Toki Pona
 speakers describe what they found "useful" about Toki Pona- or more aptly, how
 Toki Pona impacted their lives.
 

@@ -5,7 +5,7 @@ import { RENDER_DRAFTS } from "@/utils/draft.ts";
 const links = [
 	{ name: "Home", href: "/", draft: true },
 	{ name: "FAQ", href: "/faq/", draft: true },
-	{ name: "Perspectives", href: "/reviews/", draft: true },
+	{ name: "Perspectives", href: "/perspectives/", draft: true },
 	{ name: "About", href: "/about/", draft: true },
 
 ].filter((link) => !(link.draft && !RENDER_DRAFTS));
