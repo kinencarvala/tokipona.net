@@ -6,9 +6,12 @@ interface Props {
 	draft?: boolean;
 	array: Array<{}>;
 	faq_title: string;
+q	nextLink?: string;
+	prevLink?: string;
+	nextText?: string;
 }
 
-const { title, description, draft, array, faq_title } = Astro.props;
+const { title, description, draft, array, faq_title, nextLink, prevLink, nextText } = Astro.props;
 ---
 
 <style>
@@ -126,9 +129,32 @@ const { title, description, draft, array, faq_title } = Astro.props;
 	.summary {
 		z-index: 4;
 	}
+	.faqnext{
+		width: 100%;
+		grid-column: 1 / 3;
+		display: grid;
+		padding: 1em;
 
-	@media (max-width: 35em) {
+		grid-template-columns: auto 1fr;
+		align-items: center;
+		
+		.prev{
+			margin-left: 2em;
+		}
+
+		div{
+			grid-column: 2 / 3;
+			justify-self: end;
+			display: grid;
+
+			span a {
+				font-size: 2em;
+
+			}
+
+		}
 	}
+
 </style>
 
 <Layout title={title} description={description} draft={draft}>
@@ -141,7 +167,7 @@ const { title, description, draft, array, faq_title } = Astro.props;
 							<a href={`#${item.id}`}>{item.data.title}</a>
 						</li>
 					))
-				}
+				} 
 			</ol>
 		</nav>
 	</section>
@@ -186,6 +212,19 @@ const { title, description, draft, array, faq_title } = Astro.props;
 					</article>
 				))
 			}
+		</div>
+		<div class="faqnext">
+{ prevLink ?	
+			<a class="prev" href={prevLink}>Previous</a>
+			:""
+
+}
+{ nextLink?			<div>
+				<span>Next FAQ section:</span>
+				<span><a href={nextLink}>{nextText}</a></span>
+			</div> : ""
+}
+
 		</div>
 	</section>
 </Layout>
