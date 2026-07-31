@@ -1,0 +1,13 @@
+const { link, category, description, img } = Astro.props;
+---
+<li class="highlighted">
+	<a class="resource" href={r.link} target="_blank" rel="noopener noreferrer">
+		{r.name}
+	</a>
+	{r.category && <span> ({r.category})</span>}
+
+	<a aria-hidden="true" href={r.link} target="_blank" rel="noopener noreferrer">
+		{r.img && <img src={r.img} alt="" />}
+	</a>
+	{r.description && <p>{r.description}</p>}
+</li>
