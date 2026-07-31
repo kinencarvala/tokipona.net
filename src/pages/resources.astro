@@ -1,22 +1,22 @@
 ---
 import Layout from "@/layouts/Layout.astro";
 import resources from "../data/resources.yaml";
-import SinKulupu from "@/components/resources/SinKulupu.astro"
+import SinKulupu from "@/components/resources/SinKulupu.astro";
+import InfoSitelenToki from "@/components/resources/Info_SitelenToki.astro";
+import FilterFor from "@/components/resources/FilterFor.astro";
+
+import Container_Nested from "@/components/resources/Container_Nested.astro";
+import ContainerSitelenToki from "@/components/resources/Container_SitelenToki.astro";
+import SeeMore from "@/components/resources/SeeMore.astro";
+import ContainerCircles from "@/components/resources/Container_Circles.astro";
+import Container_CubedBullets from "@/components/resources/Container_CubedBullets.astro";
+
 ---
 
 <Layout title={"o pali"} description={"."} draft>
 	<style>
-		.badge {
-			display: flex;
-			justify-content: center;
-		}
-		iframe.form {
-			width: 100%;
-			min-height: 45em;
-		}
-		h2::after {
-		}
-		h2 {
+		
+		section :global(h2) {
 			text-align: left;
 			padding-inline-start: 1em;
 			font-size: 1.7em;
@@ -25,301 +25,95 @@ import SinKulupu from "@/components/resources/SinKulupu.astro"
 			text-align: center;
 		}
 
-		.courses {
-			columns: 18em;
-			gap: 2em;
-
-			.highlighted {
-				break-inside: avoid;
-				list-style-type: none;
-				padding-bottom: 2em;
-
-				.resource {
-					font-size: 1.5em;
-					padding-inline-end: 0.25em;
-					font-weight: 600;
-				}
-
-				img {
-					max-width: 10em;
-					float: right;
-					margin-inline-start: 2em;
-					margin-block-start: 1em;
-				}
-			}
-		}
-		.resourcebox.more {
-			background-color: inherit;
-
-			h3 {
-				text-align: center;
-				margin-block-start: 0em;
-			}
-			ul {
-				padding-inline-start: 0.5em;
-			}
-			li {
-				list-style-type: disc;
-				margin-inline-start: 0em;
-				margin-block-end: 0.25em;
-			}
-			p {
-				font-weight: 600;
-				text-align: center;
-				margin-block-end: 0em;
-			}
-		}
-		.communities {
-			display: flex;
-			flex-wrap: wrap;
-			justify-content: center;
-			gap: 1em;
-			margin: 0;
-			padding: 0;
-
-			img {
-				width: 5em;
-				height: 5em;
-				border-radius: 50%;
-				border: 0.2em solid black;
-			}
-			li {
-				display: grid;
-				width: 10em;
-				text-align: center;
-				grid-template-rows: auto 3em 1fr;
-
-				a {
-					color: inherit;
-					text-decoration: none;
-					font-weight: 600;
-					line-height: 1.1em;
-					text-align: center;
-				}
-				a:has(span) {
-					margin-top: 1em;
-				}
-			}
-		}
-		.inperson{
-			margin: 0 auto;
-			max-width: max-content;
-
-			li{
-				display: grid;
-				grid-template-columns: auto 1fr;
-				column-gap: 2em;
-
-				a:has(img){
-					width: 3em;
-					height: 3em;
-					grid-row: 1 / 3;
-				}
-				img{
-					border-radius: var(--rounding-small);
-
-				}
-				span{
-					font-weight: 600;
-				}
-			}
-		}
-		.more{
+	
+		.more {
 			font-size: 0.9em;
 			border: 0.5em solid var(--border);
 			padding: 1em;
 			border-radius: var(--rounding-large);
-
 		}
-		.communities-flex .more{
+		.communities-flex .more {
 			max-width: 30em;
 			margin: 0 auto;
 			display: flex;
 			flex-direction: column;
 			justify-content: space-evenly;
-
-
 		}
-		@media (min-width: 100em){
-.communities-flex{
-			display: flex;
-			column-gap: 1em;
-
+		@media (min-width: 30em) {
+			.communities-flex {
+				display: grid;
+				grid-template-columns: minmax(10em, 1.5fr) minmax(5em, 1fr);
+			}
 		}
-		}
-		
-		
 	</style>
 	<section style="grid-area: left;">
 		<h1>Resources</h1>
 
 		<h2>Communities</h2>
 
-		<h3>Online</h3>
-		<ul class="communities">
-			{
-				resources
-					.filter((r) => r.category === "community")
-					.map((r) => (
-						<li>
-							<a
-								aria-hidden="true"
-								href={r.link}
-								target="_blank"
-								rel="noopener noreferrer"
-							>
-								{r.img && <img src={r.img} alt="" />}
-							</a>
+				<h3>Online</h3>
+				<ContainerCircles
+				name="Online"
+				category="community"
+				withImg={true}></ContainerCircles>
 
-							<a
-								class="resource"
-								href={r.link}
-								target="_blank"
-								rel="noopener noreferrer"
-							>
-								<span>{r.name}</span>
-							</a>
-							{r.description && <p>{r.description}</p>}
-						</li>
-					))
-			}
-		</ul>
+
 		
-<div class="communities-flex">
-	
+		<div class="communities-flex">
 			<div>
 				<h3>In-Person</h3>
-						<ul class="inperson">
-					{
-						resources
-							.filter((r) => r.category === "inperson")
-							.map((r) => (
-								<li>
-									<a
-										aria-hidden="true"
-										href={r.link}
-										target="_blank"
-										rel="noopener noreferrer"
-									>
-										{r.img && <img src={r.img} alt="" />}
-									</a>
-									<a
-										class="resource"
-										href={r.link}
-										target="_blank"
-										rel="noopener noreferrer"
-									>
-										<span>{r.name}</span>
-									</a>
-									{r.description && <p>{r.description}</p>}
-								</li>
-							))
-					}
-				</ul>
+
+
+								<Container_CubedBullets
+				name="In-Person"
+				category="inperson"
+				withImg={true}></Container_CubedBullets>
+
 			</div>
-	
-			<div class="more">
-				<h3>More Communities</h3>
-	
-					<p>A full list of all known Toki Pona communities is maintained on <a href="https://sona.pona.la/wiki/Communities">the sona pona wiki's "<strong>Communities</strong>" article</a></p>
-
-					<p>If you're looking for language-specific or place-specific communities, or communities on platforms not listed here, there's a good chance that it is on this list.</p>
-			</div>
+			<SeeMore>
 
 
-	
-</div>
+				<p class="horizon">
+					A full list of all known Toki Pona communities is maintained on <a
+						href="https://sona.pona.la/wiki/Communities"
+						>the sona pona wiki's "<strong>Communities</strong>" article</a
+					>
+				</p>
 
+				<p>
+					If you're looking for language-specific or place-specific communities,
+					or communities on platforms not listed here, there's a good chance
+					that it is on this list.
+				</p>
 
-<SinKulupu></SinKulupu>
+			</SeeMore>
 
-		<h2>Courses</h2>
-		<ul class="courses">
-			{
-				resources
-					.filter((r) => r.category === "course" && r.img)
-					.map((r) => (
-						<li class="highlighted">
-							<a
-								class="resource"
-								href={r.link}
-								target="_blank"
-								rel="noopener noreferrer"
-							>
-								{r.name}
-							</a>
-							{r.category && <span> ({r.category})</span>}
+		</div>
 
-							<a
-								aria-hidden="true"
-								href={r.link}
-								target="_blank"
-								rel="noopener noreferrer"
-							>
-								{r.img && <img src={r.img} alt="" />}
-							</a>
-							{r.description && <p>{r.description}</p>}
-						</li>
-					))
-			}
-			<li class="highlighted">
-				<div class="resourcebox more">
-					<h3>Other courses</h3>
-					<ul>
-						{
-							resources
-								.filter((r) => r.category === "course" && !r.img)
-								.map((r) => (
-									<li>
-										<a href={r.link} target="_blank" rel="noopener noreferrer">
-											{r.name}
-										</a>{" "}
-										·{r.description && <span>{r.description}</span>}
-									</li>
-								))
-						}
-					</ul>
-					<p>
-						Even more courses listed on sona.pona.la, <br />"<a
-							href="https://sona.pona.la/wiki/Learning_resources#Video_lessons"
-							>Learning Resources</a
-						>."
-					</p>
-				</div>
+		<SinKulupu />
+
+		<ContainerSitelenToki name="Courses" withImg={true} category="course">
+			<li>
+				<SeeMore>
+					<Container_Nested>
+						<p>
+							Even more courses listed on sona.pona.la, <br />"<a
+								href="https://sona.pona.la/wiki/Learning_resources#Video_lessons"
+								>Learning Resources</a
+							>."
+						</p>
+					</Container_Nested>
+				</SeeMore>
 			</li>
-		</ul>
+		</ContainerSitelenToki>
 
-		<h2>Reference</h2>
+		<ContainerSitelenToki
+			name="Reference"
+			withImg={true}
+			category="reference"
+		>
+		</ContainerSitelenToki>
 
-		<ul class="courses">
-			{
-				resources
-					.filter((r) => r.category === "reference" && r.img)
-					.map((r) => (
-						<li class="highlighted">
-							<a
-								class="resource"
-								href={r.link}
-								target="_blank"
-								rel="noopener noreferrer"
-							>
-								{r.name}
-							</a>
-							{r.category && <span> ({r.category})</span>}
-
-							<a
-								aria-hidden="true"
-								href={r.link}
-								target="_blank"
-								rel="noopener noreferrer"
-							>
-								{r.img && <img src={r.img} alt="" />}
-							</a>
-							{r.description && <p>{r.description}</p>}
-						</li>
-					))
-			}
-		</ul>
 
 		<h2>Reading Practice</h2>
 
@@ -327,29 +121,7 @@ import SinKulupu from "@/components/resources/SinKulupu.astro"
 			{
 				resources
 					.filter((r) => r.category === "reading")
-					.map((r) => (
-						<li class="highlighted">
-							<a
-								class="resource"
-								href={r.link}
-								target="_blank"
-								rel="noopener noreferrer"
-							>
-								{r.name}
-							</a>
-							{r.category && <span> ({r.category})</span>}
-
-							<a
-								aria-hidden="true"
-								href={r.link}
-								target="_blank"
-								rel="noopener noreferrer"
-							>
-								{r.img && <img src={r.img} alt="" />}
-							</a>
-							{r.description && <p>{r.description}</p>}
-						</li>
-					))
+					.map((r) => <InfoSitelenToki entry={r} />)
 			}
 		</ul>
 
@@ -359,29 +131,7 @@ import SinKulupu from "@/components/resources/SinKulupu.astro"
 			{
 				resources
 					.filter((r) => r.category === "listening")
-					.map((r) => (
-						<li class="highlighted">
-							<a
-								class="resource"
-								href={r.link}
-								target="_blank"
-								rel="noopener noreferrer"
-							>
-								{r.name}
-							</a>
-							{r.category && <span> ({r.category})</span>}
-
-							<a
-								aria-hidden="true"
-								href={r.link}
-								target="_blank"
-								rel="noopener noreferrer"
-							>
-								{r.img && <img src={r.img} alt="" />}
-							</a>
-							{r.description && <p>{r.description}</p>}
-						</li>
-					))
+					.map((r) => <InfoSitelenToki entry={r} />)
 			}
 		</ul>
 	</section>

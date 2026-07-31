@@ -1,0 +1,48 @@
+---
+import FilterFor from "./FilterFor.astro";
+---
+
+<style>
+	div.resourcebox {
+		ul {
+			padding-inline-start: 0.5em;
+			list-style-type: disc;
+
+			background-color: inherit;
+
+			h3 {
+				text-align: center;
+				margin-block-start: 0em;
+			}
+			li {
+				display: list-item;
+				list-style-type: disc;
+				padding: 0em;
+				padding-bottom: 0.25em;
+
+				a {
+					font-size: initial;
+					padding-inline-end: 0.25em;
+					font-weight: initial;
+				}
+				p {
+					display: inline;
+				}
+			}
+		}
+		p {
+			text-align: center;
+		}
+	}
+</style>
+<div class="resourcebox">
+	<ul>
+		<FilterFor
+			name="Courses"
+			withImg={false}
+			hideCat={true}
+			category="course"
+		/>
+		<slot />
+	</ul>
+</div>

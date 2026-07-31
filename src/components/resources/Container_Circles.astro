@@ -1,0 +1,53 @@
+---
+import FilterFor from "@/components/resources/FilterFor.astro";
+const { name, category, withImg } = Astro.props;
+
+---
+<style>
+.communities {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			gap: 1em;
+			margin: 0;
+			padding: 0;
+
+			img {
+				width: 5em;
+				height: 5em;
+				border-radius: 50%;
+				border: 0.2em solid black;
+			}
+			li {
+				display: grid;
+				width: 10em;
+				text-align: center;
+				grid-template-rows: auto 3em 1fr;
+
+				a:not(:has(img)) {
+                    grid-row: 2 / 3;
+					color: inherit;
+					text-decoration: none;
+					font-weight: 600;
+					line-height: 1.1em;
+					text-align: center;
+                    margin-block-start: 1em;
+				}
+                a:has(img){
+                    grid-row: 1 / 2;
+
+
+                }
+			}
+		}
+
+
+</style>
+
+		<ul class="communities">
+
+						<FilterFor
+                        name={name} category={category} withImg={withImg}></FilterFor>
+            <slot />
+
+		</ul>

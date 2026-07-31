@@ -1,0 +1,25 @@
+---
+const { name, body } = Astro.props;
+---
+
+<style>
+	.more,
+	.resourcebox {
+		font-size: 0.9em;
+		border: 0.5em solid var(--border);
+		padding: 1em;
+		border-radius: var(--rounding-large);
+	}
+	.more:has(.horizon){
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+
+	}
+</style>
+
+<div class="more">
+	<h3>More {name}</h3>
+	{body}
+	<slot />
+</div>

@@ -1,13 +1,22 @@
-const { link, category, description, img } = Astro.props;
 ---
-<li class="highlighted">
-	<a class="resource" href={r.link} target="_blank" rel="noopener noreferrer">
-		{r.name}
-	</a>
-	{r.category && <span> ({r.category})</span>}
+const { entry, hideCat } = Astro.props;
+---
 
-	<a aria-hidden="true" href={r.link} target="_blank" rel="noopener noreferrer">
-		{r.img && <img src={r.img} alt="" />}
+<li>
+	<a href={entry.link} target="_blank" rel="noopener noreferrer">
+		{entry.name}
 	</a>
-	{r.description && <p>{r.description}</p>}
+
+	<span class="cat">{hideCat ? "·" : entry.category }</span>
+
+	<a
+		aria-hidden="true"
+		href={entry.link}
+		target="_blank"
+		rel="noopener noreferrer"
+	>
+		{entry.img && <img src={entry.img} alt="" />}
+	</a>
+
+	{entry.description && <p>{entry.description}</p>}
 </li>
