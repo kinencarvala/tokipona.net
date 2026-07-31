@@ -7,7 +7,6 @@ const links = [
 	{ name: "FAQ", href: "/faq/", draft: true },
 	{ name: "Perspectives", href: "/perspectives/", draft: true },
 	{ name: "About", href: "/about/", draft: true },
-
 ].filter((link) => !(link.draft && !RENDER_DRAFTS));
 ---
 
@@ -25,6 +24,12 @@ const links = [
 
 	.toggle {
 		margin-left: auto;
+		flex-shrink: 0;
+	}
+	.toggle.non-draft {
+		position: absolute;
+		top: 1em;
+		right: 1em;
 	}
 
 	.logo {
@@ -49,6 +54,13 @@ const links = [
 		height: 1.5rem;
 		background: var(--border);
 		margin-inline: 0.75rem;
+	}
+
+	.links {
+		display: flex;
+		overflow-x: auto;
+		overflow-y: hidden;
+		margin-right: 0.25rem;
 	}
 
 	.link {
@@ -95,17 +107,21 @@ const links = [
 				tokipona.net
 			</a>
 			<div role="separator" />
-			{links.map((link) => (
-				<a
-					href={link.href}
-					class:list={["link", Astro.url.pathname === link.href && "active"]}
-				>
-					{link.name}
-				</a>
-			))}
+			<div class="links">
+				{links.map((link) => (
+					<a
+						href={link.href}
+						class:list={["link", Astro.url.pathname === link.href && "active"]}
+					>
+						{link.name}
+					</a>
+				))}
+			</div>
+			<div class="toggle">
+				<DarkModeToggle />
+			</div>
 		</nav>
-	:	""
+	:	<div class="toggle non-draft">
+			<DarkModeToggle />
+		</div>
 }
-<div class="toggle">
-	<DarkModeToggle />
-</div>
