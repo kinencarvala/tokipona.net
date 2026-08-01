@@ -10,6 +10,7 @@ import ContainerSitelenToki from "@/components/resources/Container_SitelenToki.a
 import SeeMore from "@/components/resources/SeeMore.astro";
 import ContainerCircles from "@/components/resources/Container_Circles.astro";
 import Container_CubedBullets from "@/components/resources/Container_CubedBullets.astro";
+import Container_Thumbnail from "@/components/resources/Container_Thumbnail.astro";
 
 ---
 
@@ -25,6 +26,9 @@ import Container_CubedBullets from "@/components/resources/Container_CubedBullet
 			text-align: center;
 		}
 
+		p.uncontained {
+			padding: 0.5em 1.5em;
+		}
 	
 		.more {
 			font-size: 0.9em;
@@ -91,11 +95,15 @@ import Container_CubedBullets from "@/components/resources/Container_CubedBullet
 		</div>
 
 		<SinKulupu />
+		<h2>Courses</h2>
 
 		<ContainerSitelenToki name="Courses" withImg={true} category="course">
 			<li>
 				<SeeMore>
-					<Container_Nested>
+					<Container_Nested
+					name="Course"
+					category="course"
+					withImg={false}>
 						<p>
 							Even more courses listed on sona.pona.la, <br />"<a
 								href="https://sona.pona.la/wiki/Learning_resources#Video_lessons"
@@ -106,6 +114,8 @@ import Container_CubedBullets from "@/components/resources/Container_CubedBullet
 				</SeeMore>
 			</li>
 		</ContainerSitelenToki>
+
+		<h2>Reference</h2>
 
 		<ContainerSitelenToki
 			name="Reference"
@@ -127,13 +137,31 @@ import Container_CubedBullets from "@/components/resources/Container_CubedBullet
 
 		<h2>Listening Practice</h2>
 
-		<ul class="courses">
-			{
-				resources
-					.filter((r) => r.category === "listening")
-					.map((r) => <InfoSitelenToki entry={r} />)
-			}
-		</ul>
+
+		<p class="uncontained">There are Toki Pona vloggers, streamers, and presenters on YouTube, but they can but a little hard to find. Hopefully these organized (and regularly updated) <strong>playlists</strong> can help!</p>
+
+		<Container_Thumbnail
+			withImg={true}
+			category="playlist"
+		>
+		
+	</ContainerThumbnail>
+
+
+
+
+
+			<ContainerSitelenToki
+			name="Reference"
+			withImg={true}
+			category="listening"
+		>
+				
+		</ContainerSitelenToki>
+
+
+
+
 	</section>
 	<section style="grid-area: right;" class="prose">
 		<p>Sidebar Content Here</p>

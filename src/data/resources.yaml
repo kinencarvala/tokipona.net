@@ -80,41 +80,52 @@
   img: 
 - name: toki lili lon ma kasi
   category: listening
-  description:
+  description: In this short, 12-video series, jan Telakoman vlogs as he walks around in nature. Emojis and other overlaid graphics help support you to understand what he's saying. Also see jan Telakoman's much longer '#opetp' project (listed here under 'courses') which uses the same principles of comprehensible input. 
   link: https://www.youtube.com/playlist?list=PLwYL9_SRAk8E-dYX8ioR3tt91hcd5bxV0
-  img: 
-- name: Duostories
-  category: listening
-  description:
-  link: https://duostories.org/tok-en
-  img: 
-- name: kalama sin
-  category: listening
-  description: 
-  link: https://www.youtube.com/playlist?list=PLjOmpMyMxd8Qs2mAXcLk817tQy_AQj09u
-  img: 
-- name: seme li sin?
-  category: listening
-  description:
-  link:
-  img: 
+  img: bk
 - name: jan Polijan
   category: listening
+  description: jan Polijan's vlogs are spoken in clear, un-rushed Toki Pona. Each vlog shows him engaging in an activity or musing on a new idea while being surrounded by nature. Supported with strong visual context, jan Polijan's videos all have options for subtitles in Toki Pona, English and French. 
+  link: https://www.youtube.com/@janPolijan/videos
+  img: /sitelen/resources/polijan.jpg
+
+- name: Duostories
+  category: listening
+  description: The Duostories project allows you to practice your Toki Pona comprehension with interactive exercises and stories. Text-to-speech narration is integrated into the stories. 
+  link: https://duostories.org/tok-en
+  img: /sitelen/resources/duostories.png
+- name: kalama sin
+  category: listening
+  description: A Toki Pona podcast. Different speakers come on and present naturally about various topics. Most of the episodes have transcripts to help you follow along. kalama sin is available wherever you get your podcasts, including YouTube, where most episodes have subtitles available.
+  link: https://redcircle.com/shows/kalama-sin
+  img: /sitelen/resources/kalamasin.jpeg
+- name: suno pi toki pona
+  category: listening
+  description: suno pi toki pona, or Toki Pona Day, is a 24-hour livestream event held every year in the week of August. On their website, you can peruse the backlog of recordings.
+  link: https://suno.pona.la/
+  img: /sitelen/resources/sptp.svg
+- name: jan Alonola
+  category: channel
+  description:
+  link: https://www.youtube.com/watch?v=yR61I5QwUSE&list=PLLrnNZ0mYpiqhjfkKNZAbMJaQN0zKEWlU
+  img:
+- name: seme li sin?
+  category: channel
   description:
   link:
   img: 
 - name: jan Lakuse
-  category: listening
+  category: channel
   description:
   link:
   img: 
 - name: jan Tepo
-  category: listening
+  category: channel
   description:
   link:
   img: 
 - name: jan Kekan San
-  category: listening
+  category: channel
   description:
   link:
   img: 
@@ -164,27 +175,27 @@
   link: https://stt.gg/QQf0ZZd8
   img: /sitelen/resources/stoat.png
 - name: Stories and Presentations
-  category: listening
+  category: playlist
   description:
   link: https://www.youtube.com/playlist?list=PLoLQoll2U6WGtrg_4CURI3R4rp6ArHdsX
-  img: 
+  img: /sitelen/resources/Presentations.svg
 - name: Blogs and Conversations
-  category: listening
+  category: playlist
   description:
   link: https://www.youtube.com/playlist?list=PLoLQoll2U6WF9RosKElwHUhAcx4TbCLv-
-  img: 
+  img: /sitelen/resources/Conversation.svg
 - name: Podcasts and News
-  category: listening
+  category: playlist
   description: 
   link: https://www.youtube.com/playlist?list=PLoLQoll2U6WFwq1JasXWsOdR7tOZNdApR
-  img: 
+  img: /sitelen/resources/Podcast.svg
 - name: Gaming
-  category: listening
+  category: playlist
   description:
   link: https://www.youtube.com/playlist?list=PLoLQoll2U6WE0LvFTjXUsRtYlS2GIoNVI
-  img: 
+  img: /sitelen/resources/Gaming.svg
 - name: Music Masterlist
-  category:
+  category: music
   description:
   link: https://www.youtube.com/playlist?list=PLc7R2x5fn6AqRFUR9JzGIqh0FMdtsXRnH
   img: 
@@ -203,9 +214,60 @@
   description: Tiana 2026, Strasbourg 2025, Berlin 2024, Maastricht 2023, Vienna 2022
   link: https://sona.pona.la/wiki/tenpo_kulupu_pi_ma_Elopa
   img: /sitelen/resources/elopa.png
-- name: 
+- name: ma Seka 
+  category: listening 
+  description: ma Seka is a Toki Pona instance of PeerTube, a YouTube alternative based on peer-to-peer technology. All videos that are on ma Seka are related to Toki Pona, and it supports Sitelen Pona too!
+  link: https://seka.pona.la
+  img: /sitelen/resources/seka.png
+- name:
   category:
   description:
   link:
-  img: 
+  img:
+- name:
+  category:
+  description:
+  link:
+  img:
+- name:
+  category:
+  description:
+  link:
+  img:
+- name:
+  category:
+  description:
+  link:
+  img:
+- name:
+  category:
+  description:
+  link:
+  img:
+- name:
+  category:
+  description:
+  link:
+  img:
+- name:
+  category:
+  description:
+  link:
+  img:
+- name:
+  category:
+  description:
+  link:
+  img:
+- name:
+  category:
+  description:
+  link:
+  img:
+- name:
+  category:
+  description:
+  link:
+  img:
+
 

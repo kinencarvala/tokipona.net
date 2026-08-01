@@ -1,4 +1,5 @@
 ---
+const { name, category, withImg } = Astro.props;
 import FilterFor from "./FilterFor.astro";
 ---
 
@@ -38,10 +39,10 @@ import FilterFor from "./FilterFor.astro";
 <div class="resourcebox">
 	<ul>
 		<FilterFor
-			name="Courses"
-			withImg={false}
+			name={name}
+			withImg={withImg}
 			hideCat={true}
-			category="course"
+			category={category}
 		/>
 		<slot />
 	</ul>
