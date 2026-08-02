@@ -6,7 +6,7 @@ const { name, body } = Astro.props;
 	.more,
 	.resourcebox {
 		font-size: 0.9em;
-		border: 0.5em solid var(--border);
+		border: 0.2em solid var(--card-background);
 		padding: 1em;
 		border-radius: var(--rounding-large);
 	}
@@ -19,7 +19,6 @@ const { name, body } = Astro.props;
 </style>
 
 <div class="more">
-	<h3>More {name}</h3>
 	{body}
 	<slot />
 </div>

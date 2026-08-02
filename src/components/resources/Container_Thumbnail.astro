@@ -11,6 +11,7 @@ const { name, category, withImg } = Astro.props;
 			gap: 1em;
 			margin: 0;
 			padding: 0;
+			margin-block-end: 3em;
 
 			img {
 				width: 8em;
@@ -34,6 +35,7 @@ const { name, category, withImg } = Astro.props;
 					text-align: center;
                     margin-block-start: 1em;
 				}
+
                 .cat {
                     display: none;
                 }
@@ -43,6 +45,10 @@ const { name, category, withImg } = Astro.props;
 
                 }
 			}
+			li:has(a:hover) a {
+				text-decoration: underline;
+			}
+
 		}
 .dark .playlist img{
 padding: 5em;

@@ -22,12 +22,15 @@ import FilterFor from "./FilterFor.astro";
 				padding-bottom: 0.25em;
 
 				a {
-					font-size: initial;
+					font-size: 1em;
 					padding-inline-end: 0.25em;
-					font-weight: initial;
+					font-weight: 600;
 				}
 				p {
 					display: inline;
+				}
+				.cat{
+					display: none;
 				}
 			}
 		}
@@ -37,6 +40,8 @@ import FilterFor from "./FilterFor.astro";
 	}
 </style>
 <div class="resourcebox">
+		<h3>More {name}</h3>
+
 	<ul>
 		<FilterFor
 			name={name}
