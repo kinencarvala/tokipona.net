@@ -1,17 +1,14 @@
 ---
 import Layout from "@/layouts/Layout.astro";
-import resources from "../data/resources.yaml";
 import SinKulupu from "@/components/resources/SinKulupu.astro";
-import InfoSitelenToki from "@/components/resources/Info_SitelenToki.astro";
-import FilterFor from "@/components/resources/FilterFor.astro";
-
 import Container_Nested from "@/components/resources/Container_Nested.astro";
 import ContainerSitelenToki from "@/components/resources/Container_SitelenToki.astro";
+import ContainerSitelenLiliToki from "@/components/resources/Container_SitelenLiliToki.astro";
+
 import SeeMore from "@/components/resources/SeeMore.astro";
 import ContainerCircles from "@/components/resources/Container_Circles.astro";
 import Container_CubedBullets from "@/components/resources/Container_CubedBullets.astro";
 import Container_Simple from "@/components/resources/Container_Simple.astro";
-
 import Container_Thumbnail from "@/components/resources/Container_Thumbnail.astro";
 
 ---
@@ -114,12 +111,12 @@ import Container_Thumbnail from "@/components/resources/Container_Thumbnail.astr
 
 		<h2>Reference</h2>
 
-		<ContainerSitelenToki
+		<ContainerSitelenLiliToki
 			name="Reference"
 			withImg={true}
 			category="reference"
 		>
-		</ContainerSitelenToki>
+		</ContainerSitelenLiliToki>
 
 
 		<h2>Reading Practice</h2>
@@ -166,6 +163,13 @@ import Container_Thumbnail from "@/components/resources/Container_Thumbnail.astr
 				
 		</ContainerSitelenToki>
 
+
+<h2>Tools</h2>
+
+				<Container_Simple
+				name="Online"
+				category="tools"
+				withImg={false}></Container_Simple>
 
 
 

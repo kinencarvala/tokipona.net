@@ -3,16 +3,37 @@
   description: "This website offers a full Toki Pona crash-course. It teaches vocabulary, grammar, and the sitelen pona writing system using Duolingo-style quizzes and exercises to boost retention. Available in many languages: English · čeština · dansk · Deutsch · español · français · magyar · italiano · polski · português · Tagalog · русский · українська · العربية · עברית" 
   link: https://wasona.com/
   img: https://wasona.com/favicon.png
+- name: sona.pona.la
+  category: reference
+  description: Toki Pona's community wiki, a treasure trove of articles, links and information about language, its community, and its history. Constantly being updated with new information, everyone is invited to contribute.
+  link: https://sona.pona.la/
+  img: https://static.wikitide.net/sonaponawiki/e/ec/sona_pona_%28provisional%29.png
 - name: nimi.li
   category: reference
   description: "An interactive dictionary for Toki Pona that brings together defintions and notes from various sources. It also serves as a reference for various writing systems, the sign language Luka Pona, usage statistics, and more."
   link: https://nimi.li/
   img: https://nimi.li/favicon.png
-- name: sona.pona.la
+- name: lipu Linku
   category: reference
-  description: "Toki Pona's community wiki, a treasure trove of articles, links and information about language, its community, and its history. "
-  link: https://sona.pona.la/
-  img: https://static.wikitide.net/sonaponawiki/e/ec/sona_pona_%28provisional%29.png
+  description: "lipu Linku maintains a community-sourced dictionary and collects other data, including usage data, tracks experimental 'sandbox' words, and also maintains a repository of Sitelen Pona fonts."
+  link: https://linku.la/
+  img: https://linku.la/favicon.png
+- name: lipu pi jan Ne
+  category: reference
+  description: jan Ne's website is a long-consulted community resource for those interested in Toki Pona as it is presented in Sonja Lang's 2014 publication. It mirrors a copy of the original dictionary and place names, as well as other excertps from the book and from the creator's early published work.
+  link: https://jan-ne.github.io/tp/
+  img: https://jan-ne.github.io/janNelaso.svg
+- name: SPPTA
+  category: reference
+  description: "The Sitelen Pona Publishers and Typographers Association outlines Common Sitelen Pona (sitelen pona kulupu), a standard that outlines the basic characteristics of Sitelen Pona, developed through a mix of community surveys and consultations with Sitelen Pona experts. "
+  link: https://sitelenpona.net/
+  img: /sitelen/resources/sppta.png
+- name: lipu Kemeka
+  category: reference
+  description: "A English-TP dictionary which seeks to demonstrate different ways translation works through contextualized, example sentences. Still under development."
+  link: https://kemeka.pona.la/
+  img: https://kemeka.pona.la/favicon.svg
+
 - name: "o pilin e toki pona #opetp"
   category: course
   description: Using comprehensible input, jan Telakoman uses pictures and gestures to get you learning Toki Pona subconsciously through immersion. Thirty videos designed to be watched over one month; are you up to the challenge?
@@ -211,7 +232,7 @@
   img:  /sitelen/ma-ale/lipu-ma.png
 - name: Annual North American Gathering
   category: inperson
-  description: NYC 2026, Seattle 2025, Chicaco 2024, Washington DC 2023. 
+  description: NYC 2026, Seattle 2025, Chicago 2024, Washington DC 2023. 
   link: https://kulupu.la/
   img:  /sitelen/resources/amelika.png
 - name: Annual European Gathering
@@ -224,7 +245,52 @@
   description: ma Seka is a Toki Pona instance of PeerTube, a YouTube alternative based on peer-to-peer technology. All videos that are on ma Seka are related to Toki Pona, and it supports Sitelen Pona too!
   link: https://seka.pona.la
   img: /sitelen/resources/seka.png
-- name:
+- name: telo misikeke
+  category: tools
+  description:
+  link: https://telo-misikeke.gitlab.io/
+  img:
+- name: ilo Muni
+  category: tools
+  description:
+  link: https://ilo.muni.la/
+  img:
+- name: Sitelen Pona Dictionary
+  category: tools
+  description:
+  link: https://theotherwebsite.com/tokipona/
+  img:
+- name: number converter
+  category: tools
+  description:
+  link:
+  img:
+- name: ucsur converter
+  category: tools
+  description:
+  link:
+  img:
+- name: ajemi?
+  category: tools
+  description:
+  link:
+  img:
+- name: wakalito
+  category: tools
+  description:
+  link:
+  img:
+- name: cheat sheet
+  category: reference
+  description:
+  link:
+  img:
+- name: kili pan Juli's grammar
+  category: reference
+  description:
+  link:
+  img:
+- name: ma.pona.la
   category:
   description:
   link:
@@ -244,35 +310,6 @@
   description:
   link:
   img:
-- name:
-  category:
-  description:
-  link:
-  img:
-- name:
-  category:
-  description:
-  link:
-  img:
-- name:
-  category:
-  description:
-  link:
-  img:
-- name:
-  category:
-  description:
-  link:
-  img:
-- name:
-  category:
-  description:
-  link:
-  img:
-- name:
-  category:
-  description:
-  link:
-  img:
+
 
 
