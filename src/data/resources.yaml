@@ -53,30 +53,35 @@
   description: jan Same teaches the Sitelen Pona writing system in 13 video lessons
   link:
   img: 
-- name: lipu Inteken
-  category: reading
-  description:
-  link: https://raacz.neocities.org/toki-pona/beginner-material
-  img: 
-- name: Illustrated Short Stories on Storeyweaver
-  category: reading
-  description:
-  link:
-  img: 
 - name: lipu tenpo
   category: reading
-  description:
+  description: A magazine written in Toki Pona with over 30 releases, featuring both informative and creative works. Available in digital and printable formats. Through Patreon, you can get lipu tenpo sent straight to your doorstep! 
   link: https://liputenpo.org/
   img: 
-- name: poki Lapo
+- name: StoryWeaver Picture Books
   category: reading
-  description:
-  link: https://lipu.pona.la/
+  description: StoryWeaver offers a bunch of illustrated that anyone can translate into any language; Toki Pona speakers have translated selected titles into Toki Pona!
+  link: https://storyweaver.org.in/en/search?language=Toki%20Pona
   img: 
-- name: utala.pona.la
+- name: toki soweli tan jan Beatrix Potter
   category: reading
-  description:
-  link:
+  description: 22 of Beatrix Potter's animal stories translated into Toki Pona by jan Ke Tami and jan Pulepo. 
+  link: https://lipumonsuta.neocities.org/
+  img: 
+- name: Beginner Texts in Toki Pona
+  category: reading
+  description: Small and large works, over 15K+ words in total, all original and authored by jan Lakuse. Features side-by-side English translations and Sitelen Pona.
+  link: https://raacz.neocities.org/toki-pona/beginner-material
+  img: 
+- name: utala musi pi toki pona
+  category: reading
+  description: Website of the annual creative writing competition, features everything from book-length works to short poems. 
+  link: https://utala.pona.la
+  img: 
+- name: lipu monsuta
+  category: reading
+  description: A toki pona horror anthology with five releases. 
+  link: https://lipumonsuta.neocities.org/
   img: 
 - name: toki lili lon ma kasi
   category: listening
