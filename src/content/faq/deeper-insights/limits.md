@@ -29,7 +29,7 @@ they may round to the nearest 20 or 100 if describing quantities.
 Despite this apparent limitation, Toki Pona speakers are able to communicate
 larger numbers through extended numbering systems like
 [nasin nanpa pona](https://sona.pona.la/wiki/nasin_nanpa_pona), which relies on
-multiplying the aforementioned base quantities. Methods to communicate fractions
+multiplying the aforementioned base quantities by 100. Methods to communicate fractions
 and decimals are less established, but speakers are still able to convey these
 ideas by conversation rather than any specific convention.
 
@@ -39,8 +39,8 @@ notation. Toki Pona speakers do not yet share a convention for verbalizing
 mathematic notation, but many proficient speakers are able to describe all basic
 operations, and they are often able to express more complex mathematical ideas
 through conversation. The realm of advanced mathematics is a frontier Toki Pona
-speakers are yet to deeply explore, though there is one notable example of
-[exploring advanced geometry](https://www.youtube.com/watch?v=tL1WBUOqE48).
+speakers are yet to deeply explore, though there are some existing examples like jan Telakoman's
+[exploration of advanced geometry](https://www.youtube.com/watch?v=tL1WBUOqE48).
 
 However, just as many people are content with not using algebra in their
 everyday life, many in the Toki Pona community are content with simply avoiding

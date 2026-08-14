@@ -23,7 +23,7 @@ _Maybe?!_[^maybe], it is also more complicated than that.
 
 It is common to think about language learning in terms of the utility that
 language provides you. For most languages, there is at least one obvious
-utility: There is a community of who speak this language somewhere in the world,
+utility: There is a community of people who speak this language somewhere in the world,
 and if you go there, you'll be able to read the street signs, purchase
 groceries, and ask where the bathroom is.
 
@@ -39,7 +39,7 @@ words mean, to ourselves and to others. It is "useful" because it helps us to
 meet close friends, and even partners. Toki Pona's usefulness cannot be measured
 economically, but it can be felt emotionally. You can also
 [jump to "Perspectives"](/perspectives/) to see Toki Pona
-speakers describe what they found "useful" about Toki Pona- or more aptly, how
+speakers describe what they found "useful" about Toki Pona—or more aptly, how
 Toki Pona impacted their lives.
 
 [^maybe]:

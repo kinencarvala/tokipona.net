@@ -28,7 +28,7 @@ speaking community did emerge, it joyfully embraced this philosophy.
 Although the creator may post material under the moniker "Official," both she
 and community members understand "Official" to function uniquely like a personal
 signature for herself. Use of this moniker does not mean that her Toki Pona is
-any more official, real, true, correct, or than that of any other. She has
+any more official, real, true, correct, or authoritative than that of any other. She has
 stated before that interpreting the word as having something to do with a
 "prescribed way to speak Toki Pona" would "contradict the whole point" of the
 messages of "creative freedom and community rights" that she put out throughout

@@ -29,7 +29,7 @@ There are no dedicated swear words, but emotionally exclaiming the words *pakala
 
 ### When is Toki Pona's birthday?
 
-August 8th. The community celebrates with a 24-hour livestream called *suno pi toki pona,* or [Toki Pona Day](https://suno.pona.la/). 
+August 8th, 2001. The community celebrates with a 24-hour livestream called *suno pi toki pona,* or [Toki Pona Day](https://suno.pona.la/). 
 
 ### Does Toki Pona have a sign language? 
 
@@ -48,7 +48,7 @@ No, and there are no plans to add Toki Pona to Duolingo. Alternative Duolingo-li
 
 ### How do colours work in Toki Pona?
 
-*loje*, *jelo*, *laso*, *walo* and *pimeja* (reddish, yellowish, blueish, whiteish and darkish) are combined together to make more colours. 
+*loje*, *jelo*, *laso*, *walo* and *pimeja* (reddish, yellowish, tealish, lightish and darkish) are combined together to make more colours, when necessary.  
 
 
 
