@@ -19,15 +19,26 @@ const { title, description, draft, array, faq_title, nextLink, prevLink, nextTex
 <style>
 
 
-	:global(.intro) :global(h2){
-		padding-bottom: inherit;
-		font-size: 1.9em;
-		line-height: 1em;
-		&::after {
-		display: none;
+		:global(.intro) {
+			padding-block: 1em !important;
 
+
+
+			:global(h2){
+			padding: 0em;
+			margin: 0em;
+			font-size: 1.1em;
+
+					line-height: 1em;
+			&::after {
+			display: none;
+			}		
+
+
+		}
 	}
-	}
+
+	
 
 	
 	.right-toc {
