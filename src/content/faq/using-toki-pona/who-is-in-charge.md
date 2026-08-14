@@ -4,7 +4,7 @@ faq_group: 2
 faq_index: 6
 published: true
 image: whos-in-charge.png
-# simple:
+simple: The creator fully empowers the community and individuals to be creative with the seed she planted. 
 ---
 
 There is no grand or central authority that dictates how Toki Pona is spoken.

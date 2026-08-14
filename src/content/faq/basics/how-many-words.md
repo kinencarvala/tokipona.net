@@ -4,7 +4,7 @@ faq_group: 1
 faq_index: 3
 published: true
 image: test.png
-# simple:
+simple: Depending on the speaker, 120-130!
 ---
 
 The figure you’ll hear most often is 120 words, but most speakers use somewhere
