@@ -30,6 +30,15 @@ import Insights from "@/components/faq/insights.astro";
 	:body{
 
 	}
+	.above-description {
+		max-width: 30em;
+		text-align: center;
+		margin: 0 auto;
+
+		a{
+			color: inherit;
+		}
+	}
 	.right-toc {
 		position: sticky;
 		top: 1rem;
@@ -282,6 +291,10 @@ import Insights from "@/components/faq/insights.astro";
 	</section>
 	<section style="grid-area: left;">
 		<h1>Toki Pona: Frequently Asked Questions</h1>
+
+		<p class="above-description">Our FAQ is a little bit long. We've recruited some <a title="plants" href="https://nimi.li/kasi">kasi</a>, <a title="birds" href="https://nimi.li/waso">waso</a>, and <a title="mammals" href="https://nimi.li/soweli">soweli</a> to prepare very condensed summaries of each answer. Click on the image next to the question. They will try to help out!</p>
+
+
 		<details class="small-toc">
 			<summary> Table of Contents </summary>
 			<ul>
