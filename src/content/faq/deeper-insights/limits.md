@@ -17,7 +17,7 @@ But there are some aspects of Toki Pona which make it more challenging to use in
 certain situations, compared to natural languages. Here we describe a few
 challenges that Toki Pona speakers may come across.
 
-### Numbers and equations
+#### Numbers and equations
 
 Toki Pona's most widely used numbering system only has words for 0, 1, 2, 5, 20,
 and 100. All other numbers are formed by adding these numbers together. This
@@ -48,7 +48,7 @@ numbers. Anecdotally, jan Mija is a Toki Pona speaker living in Canada who
 studies and teaches mathematics at the graduate level. When speaking Toki Pona,
 she takes joy in seeing just how many numbers she can successfully avoid.
 
-### Efficiency sacrificed for clarity
+#### Efficiency sacrificed for clarity
 
 Toki Pona speakers often find themselves unable to communicate an idea as
 efficiently as they can in a different language, and if they wish to communicate
@@ -62,7 +62,7 @@ because complex topics are built from the ground up. It might take several
 minutes to explain what a peanut is. Then again, it might only take a few
 seconds if the listener is familiar enough with peanut fun facts.
 
-### Vulnerable to misinterpretation
+#### Vulnerable to misinterpretation
 
 Toki Pona words are vague, and speakers are more likely to play around with
 their meaning than words from other languages, and sometimes speakers miss out
@@ -77,7 +77,7 @@ double checking and asking clarifying questions. It's common to ask a clarifying
 question expecting to be told that you understand something correctly, only to
 be told that you were wrong the whole time.
 
-### Joining a conversation in progress
+#### Joining a conversation in progress
 
 Conversations in Toki Pona can become increasingly complex as they go on for
 longer. A speaker joining a conversation late may miss key background
